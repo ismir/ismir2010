@@ -1,0 +1,313 @@
+/*  
+Theme Name: ISMIR 2010 
+Theme URI: http://www.945-ontwerp.nl
+Description: This theme is designed by 945-ontwerp.
+Version: 1.0
+Author: Bas de Haas & 945 Ontwerp
+Author URI: http://www.945-ontwerp.nl
+*/
+
+/** Color table **/
+/*
+rood:	#ee2f24;
+grijs: 	#d3cdcd;
+*/
+
+/**** Basics */
+body {
+	font-family: 'Helvetica', verdana, sans-serif;
+	font-size: 10pt;
+	line-height: 140%;
+	background: url('img/tile.gif') repeat;
+	text-align: center;
+	margin: 20px 0 20px 0;
+	padding: 0; 
+}
+
+#page {
+	background-color: white;
+	text-align: left;
+	margin: auto;
+	margin-bottom:0;
+	padding: 0px;
+	width: 998px;
+	height: auto;
+	-moz-box-shadow: 0 0 40px #424141;
+	-webkit-box-shadow: 0 0 40px #424141;
+}
+
+#header {
+	margin: 0;
+	padding: 0; 
+	width: 998px;
+}
+
+#logos{	display:block;}
+#logos img{display: inline;}
+.headerimg{ 
+	display:block; /* NODIG VOOR HET VOORKOMEN VAN EXTRA 3px SPACE TUSSEN HEADER EN CONTENT*/
+	clear:both;
+}
+
+/* first level */
+#sidebar ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px;
+}
+#sidebar ul li{
+	background-image:url('img/bar.gif');
+	background-repeat:no-repeat;
+	background-position:2px 2px;
+	padding: 0px 0px 16px 12px;
+}
+
+#sidebar ul li a, #content h1{
+	font-variant: small-caps;	
+	color: black;
+	font-size: 12pt;
+	font-weight: bold;
+	text-decoration: none;
+} 
+
+/* second level */
+#sidebar ul li ul li{
+	background-image:url('img/redbullet.gif');
+	background-repeat:no-repeat;
+	background-position:0px 8px;
+	padding: 4px 0px 0px 14px;
+}
+#sidebar ul li.page_folder ul li a{
+	font-size: 10pt;
+	font-weight: bold;
+	font-variant: normal;
+	color: black;
+}
+
+#sidebar h3{
+	margin: 0px;
+	padding: 25px 0px 8px 17px;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#sidebar{
+	float: left;
+	width: 294px;
+	margin: 34px 5px 0px 38px;
+	padding-bottom: 30px;
+	text-align: left;
+}
+
+/** width wide page set in widepage.php */
+
+#content { 
+	background-color: #d3cdcd;
+	width: 396px;
+	padding: 34px 25px 30px 25px;
+	margin-bottom: 35px;
+	float: left;
+	text-align: left;
+}
+
+#content p{
+	margin-top: 0px;
+}
+#content h1{
+	margin-bottom: 20px;
+}
+#content h1.news{
+	margin-bottom: 5px;
+}
+#content h2{
+	clear:both;
+}
+#content h2 a:hover, a.nolink{
+   text-decoration: none;
+}
+
+#content a.nolink:hover{color:black;}
+
+#content a.lang_switch{
+	float: right;
+	margin-right: 5px;
+}
+#content  ul.bulletless{
+	list-style-type: none;
+}
+
+#content table{
+	border-collapse:collapse;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+#content table, #content td,#content th{
+	border:1px solid black;
+}
+
+#content table.borderless td,#content table.borderless{border: none; padding-right: 10px;} 
+
+  table tr td{
+    color: black;
+    font: 10pt verdana;
+    height: 20px;
+  }
+
+ /** program  table styles */ 
+#content  table td{
+	vertical-align:top;
+} 
+#content  table.program td, #content  table.program tr{border: 2px solid #d3cdcd;} 
+
+#content table.program td.quarter{  border-bottom: 10px solid #d3cdcd;}
+#content table.program td.halfhour{ height: 20px; }
+#content table.program td.threequarters{ height: 30px;}
+#content table.program td.hour{height: 40px;}
+#content table.program td.onehalfhour{height: 60px;}
+#content table.program td.twohour{height: 80px;}
+#content table.program td.time, 
+#content table.program td.time a:link,
+#content table.program td.time a:visited{
+	background-color: #6D6E71;
+	color: white; 
+	font-weight: normal;
+	min-width: 90px;
+}
+#content table.program td.special{ background-color: #D8938E; }
+#content table.program td.poster{ background-color :#B8BABF;  }
+#content table.program td.plenary{ background-color: #8C8D91; } 
+#content table.program td.eatdrink{ background-color: #E7E2DE;} 
+
+#content ul.papers li{ margin-bottom: 15px;} 
+
+.navigation{ /* << vorige post | volgende post >> */ 
+	display: block; 
+	padding-bottom: 15px;
+}
+
+#news{
+	margin: 0px;
+	padding: 34px 0px 30px 0px;
+	width: 208px;
+	float: right;
+}
+#news_header{
+	background-color: #d3cdcd;
+	padding-left: 2px;
+}
+#news_header h1{
+	font-variant: small-caps;	
+	color: white;
+	font-size: 12pt;
+	padding: 4px 0px 4px 9px; 
+	border-left: 3px solid white;
+}
+#news .post{
+	margin: 0px 23px 0px 14px;
+}
+
+/****** footer ****/
+#footer {
+	margin: auto;
+	padding: 0;
+	width: 998px;
+	height: 102px;
+	clear: both; /* 	Sets the sides of an element where other floating elements are not allowed, essential for wp*/
+	border: none;
+	text-align: right; 
+}	
+
+#footer a.wplink{
+	display:block;
+	float: right;
+	margin-right: 23px;
+ 	position: relative;
+	top: 19px;
+	width: 18px;
+	height: 18px;
+	background: url('img/wp_logo.gif') no-repeat;
+}
+
+#footer a.wplink:hover{
+  background: url('img/wp_logo_roll.gif') no-repeat;
+}
+/***** end footer ****/	
+	
+/** kopjes*/
+h1, h2, h3, h4{ 
+	padding: 0px;
+	margin: 0px;
+}
+
+a{
+	text-decoration: underline;
+	color: black;
+}
+
+h2, h2 a, h3, h4{
+	padding: 15px 0px 0px 0px; 
+	font-size: 10pt;
+	text-decoration: none;
+}
+
+h4{
+	font-weight: normal;
+	font-style: italic;
+}
+
+h2 a:hover{ text-decoration: underline;}
+.time{
+	color: black;
+	font-weight: bold;
+}
+
+/** everything that is red */
+#sidebar li a:hover, #sidebar li a:active, 
+#sidebar li.current_page_item a, 
+#sidebar ul li.page_folder ul li.current_page_item a, 
+#sidebar ul li.page_folder ul li a:hover, #content h1,
+#content table.program td.time a:hover,
+h2, h2 a, a:hover{
+	color: #ee2f24;
+}
+
+.floatright{float:right;}
+.floatleft{float:left;}
+.centered{text-align: center;}
+
+
+/* Begin Various Tags & Classes */
+
+acronym, abbr, span.caps {
+	cursor: help;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+}
+
+blockquote {
+	font-weight: bold;
+	font-size: 12pt;
+	margin: 15px 20px 0 10px;
+	padding-left: 20px;
+}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+}
+
+del{ 
+	display: inline;
+	text-decoration:line-through;
+}
+hr {
+	display: none;
+	display: block;
+}
+
+a img {
+	border: none;
+}
+
